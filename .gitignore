@@ -1,0 +1,12 @@
+# Node.js / JavaScript
+node_modules/
+
+# Compiled output
+build/
+dist/
+
+# Editor/IDE specific files
+.vscode/
+
+# Miscellaneous
+*.log
