@@ -7,7 +7,11 @@ import { TanStackRouterVite } from "@tanstack/router-vite-plugin"
 export default defineConfig({
   plugins: [
     react(),
-    TanStackRouterVite({ disableTypes: true, quoteStyle: "double" })],
+    TanStackRouterVite({ 
+      disableTypes: true, 
+      quoteStyle: "double",
+      generatedRouteTree: "./src/routes/routeTree.gen.js"
+    })],
   server: {
     port: 8080
   },

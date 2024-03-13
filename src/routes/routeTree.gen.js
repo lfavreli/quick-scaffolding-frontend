@@ -12,7 +12,7 @@ import { createFileRoute } from "@tanstack/react-router"
 
 // Import Routes
 
-import { Route as rootRoute } from "./routes/__root"
+import { Route as rootRoute } from "./__root"
 
 // Create Virtual Routes
 
@@ -24,12 +24,12 @@ const IndexLazyImport = createFileRoute("/")()
 const ContactLazyRoute = ContactLazyImport.update({
   path: "/contact",
   getParentRoute: () => rootRoute,
-}).lazy(() => import("./routes/contact.lazy").then((d) => d.Route))
+}).lazy(() => import("./contact.lazy").then((d) => d.Route))
 
 const IndexLazyRoute = IndexLazyImport.update({
   path: "/",
   getParentRoute: () => rootRoute,
-}).lazy(() => import("./routes/index.lazy").then((d) => d.Route))
+}).lazy(() => import("./index.lazy").then((d) => d.Route))
 
 // Create and export the route tree
 

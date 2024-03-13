@@ -3,7 +3,7 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import CssBaseline from "@mui/material/CssBaseline"
 import { RouterProvider, createRouter } from "@tanstack/react-router"
-import { routeTree } from "./routeTree.gen"
+import { routeTree } from "./routes/routeTree.gen"
 
 const router = createRouter({ routeTree })
 
