@@ -1,6 +1,6 @@
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
-import MainContainer from "./MainContainer/MainContainer";
+import Header from "./Header";
+import Footer from "./Footer";
+import MainContainer from "./MainContainer";
 import { Outlet } from "@tanstack/react-router"
 
 const Page = () => {
