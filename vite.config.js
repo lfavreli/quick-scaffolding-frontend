@@ -10,7 +10,8 @@ export default defineConfig({
     TanStackRouterVite({ 
       disableTypes: true, 
       quoteStyle: "double",
-      generatedRouteTree: "./src/routes/routeTree.gen.js"
+      routeFileIgnorePrefix: "!",
+      generatedRouteTree: "./src/routes/!routeTree.gen.js"
     })],
   server: {
     port: 8080

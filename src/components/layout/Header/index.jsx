@@ -40,7 +40,7 @@ const Header = () => {
             <Container className="header-container" maxWidth="xl">
                 <Toolbar className="header-toolbar">
                     {/* Medium (md) breakpoint */}
-                    <Link to="/" >
+                    <Link to="/">
                         <FlareSharpIcon className="header-toolbar-md-icon" sx={styleMdBreakpoint} />
                     </Link>
                     <Box className="header-toolbar-md-menu-div" sx={styleMdBreakpoint}>
