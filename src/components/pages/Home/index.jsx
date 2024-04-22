@@ -10,9 +10,9 @@ const Home = () => {
     return (
         <>
             <div>
-                <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
+                <Link href="https://vitejs.dev" target="_blank" rel="noreferrer">
                     <img src={viteLogo} className="logo vite" alt="Vite logo" />
-                </a>
+                </Link>
                 <Link to="https://react.dev" target="_blank" rel="noreferrer">
                     <img src={reactLogo} className="logo react" alt="React logo" />
                 </Link>
