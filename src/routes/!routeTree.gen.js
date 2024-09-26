@@ -33,10 +33,12 @@ const IndexLazyRoute = IndexLazyImport.update({
 
 // Create and export the route tree
 
-export const routeTree = rootRoute.addChildren({
-  IndexLazyRoute,
-  ContactLazyRoute,
-})
+const rootRouteChildren = {
+  IndexLazyRoute: IndexLazyRoute,
+  ContactLazyRoute: ContactLazyRoute,
+}
+
+export const routeTree = rootRoute._addFileChildren(rootRouteChildren)
 
 /* prettier-ignore-end */
 
